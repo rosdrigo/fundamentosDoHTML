@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Básicos HTML PT 2</title>
+</head>
+<h1 id="index2">Fundamentos Básicos de HTML PT 2</h1>
+<h3><a href="index.html">Voltar para o Index</a></h3>
+<hr>
+
+<body>
+    <h2>Utilizando Listas Básicas no HTML</h2>
+
+    <p>Em HTML, você pode criar listas de duas formas principais: <strong>ordenadas</strong> e <strong>não
+            ordenadas</strong>. Veja como cada tipo funciona e como você pode implementá-los:</p>
+
+    <h3>Lista Ordenada (&lt;ol&gt;)</h3>
+    <p>Uma lista ordenada é usada quando você precisa apresentar itens em uma sequência específica. Os itens são
+        numerados automaticamente.</p>
+
+    <p>Exemplo de código HTML para uma lista ordenada:</p>
+    <pre>
+    <code>
+    &lt;ol&gt;
+        &lt;li&gt;Pão&lt;/li&gt;
+        &lt;li&gt;Arroz&lt;/li&gt;
+        &lt;li&gt;Feijão&lt;/li&gt;
+        &lt;li&gt;Batata&lt;/li&gt;
+    &lt;/ol&gt;
+    </code>
+    </pre>
+
+    <p>Como será exibido no navegador:</p>
+    <ol>
+        <li>Pão</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Batata</li>
+    </ol>
+
+    <h3>Lista Não Ordenada (&lt;ul&gt;)</h3>
+    <p>Uma lista não ordenada é usada para apresentar itens sem uma ordem específica. Os itens são precedidos por
+        marcadores.</p>
+
+    <p>Exemplo de código HTML para uma lista não ordenada:</p>
+    <pre>
+    <code>
+    &lt;ul&gt;
+        &lt;li&gt;Academia&lt;/li&gt;
+        &lt;li&gt;Banco&lt;/li&gt;
+        &lt;li&gt;Internet&lt;/li&gt;
+        &lt;li&gt;Ração&lt;/li&gt;
+    &lt;/ul&gt;
+    </code>
+    </pre>
+
+    <p>Como será exibido no navegador:</p>
+    <ul>
+        <li>Academia</li>
+        <li>Banco</li>
+        <li>Internet</li>
+        <li>Ração</li>
+    </ul>
+
+    <p>Para adicionar itens a essas listas, usamos a tag <strong>&lt;li&gt;</strong>, que significa "list item" (item da
+        lista). Cada item da lista deve ser incluído dentro de uma tag <strong>&lt;li&gt;</strong> e colocado dentro das
+        tags <strong>&lt;ol&gt;</strong> ou <strong>&lt;ul&gt;</strong>, dependendo
+
+    <h2>Adicionando Links no Seu HTML</h2>
+
+    <p>Para adicionar links a uma página HTML, usamos a tag <strong>&lt;a&gt;</strong>. Essa tag é fundamental para
+        criar hyperlinks, permitindo que você conecte sua página com outras páginas, seja dentro do mesmo site (links
+        internos) ou em sites externos.</p>
+
+    <p>A tag <strong>&lt;a&gt;</strong> precisa de um atributo chamado <strong>href</strong>, que define o destino do
+        link. A sintaxe básica para criar um link é:</p>
+
+    <pre><code>&lt;a href="URL"&gt;Texto do Link&lt;/a&gt;</code></pre>
+
+    <p>Por exemplo, para criar um link para o LinkedIn, o código HTML seria:</p>
+
+    <pre><code>&lt;a href="https://www.linkedin.com/in/rosdrigo"&gt;LinkedIn&lt;/a&gt;</code></pre>
+
+    <p>Este código cria um link visível assim:</p>
+
+    <a href="https://www.linkedin.com/in/rosdrigo">LinkedIn</a>
+
+
+    <h2>Utilizando Fontes em HTML</h2>
+
+    <p>Antigamente, a tag <code>&lt;font&gt;</code> era usada para alterar a aparência das fontes em HTML, como a
+        família da fonte, o tamanho e a cor. No entanto, essa tag está obsoleta e não é recomendada para uso em HTML5.
+        Em vez disso, usamos CSS (Cascading Style Sheets) para controlar a aparência das fontes de forma mais flexível e
+        poderosa.</p>
+
+    <p>Para alterar a fonte de um texto com CSS, você pode usar a propriedade <code>font-family</code>. Abaixo estão
+        exemplos de como você pode definir diferentes fontes usando CSS:</p>
+
+    <h4>Exemplos com CSS:</h4>
+
+    <p>Para aplicar uma fonte específica a um texto, você deve incluir um estilo CSS no seu HTML. Aqui estão alguns
+        exemplos:</p>
+
+    <pre><code>
+    &lt;style&gt;
+        .font-arial { font-family: Arial, sans-serif; }
+        .font-courier { font-family: Courier, monospace; }
+        .font-georgia { font-family: Georgia, serif; }
+        .font-helvetica { font-family: Helvetica, sans-serif; }
+        .font-times { font-family: Times New Roman, serif; }
+        .font-trebuchet { font-family: Trebuchet MS, sans-serif; }
+        .font-verdana { font-family: Verdana, sans-serif; }
+    &lt;/style&gt;
+    </code></pre>
+
+    <p>Aplique essas classes ao seu HTML para ver como cada fonte é exibida:</p>
+
+    <p class="font-arial">Texto em <strong>Arial</strong></p>
+    <p class="font-courier">Texto em <strong>Courier</strong></p>
+    <p class="font-georgia">Texto em <strong>Georgia</strong></p>
+    <p class="font-helvetica">Texto em <strong>Helvetica</strong></p>
+    <p class="font-times">Texto em <strong>Times New Roman</strong></p>
+    <p class="font-trebuchet">Texto em <strong>Trebuchet MS</strong></p>
+    <p class="font-verdana">Texto em <strong>Verdana</strong></p>
+
+    <p>Em CSS, a propriedade <code>font-family</code> permite especificar uma lista de fontes. O navegador usará a
+        primeira fonte disponível na lista. Se a fonte principal não estiver disponível, o navegador recorrerá às fontes
+        secundárias, que são definidas como genéricas (por exemplo, <code>serif</code> ou <code>sans-serif</code>).</p>
+
+    <p>Ao utilizar CSS para estilizar fontes, você tem muito mais controle sobre a aparência do texto em seu site, além
+        de garantir que o código esteja em conformidade com as práticas modernas de desenvolvimento web.</p>
+
+    <h2>Usando Imagens no HTML</h2>
+
+    <p>Para inserir imagens em uma página HTML, utilizamos a tag <code>&lt;img&gt;</code>. A tag
+        <code>&lt;img&gt;</code> é uma tag auto-fechante e requer pelo menos um atributo para funcionar corretamente:
+        <code>src</code>, que define a URL da imagem que você deseja exibir.</p>
+
+    <p>A sintaxe básica para a tag <code>&lt;img&gt;</code> é:</p>
+
+    <pre><code>&lt;img src="URL_da_Imagem" alt="Descrição da Imagem" /&gt;</code></pre>
+
+    <p>Vamos explicar os principais atributos usados com a tag <code>&lt;img&gt;</code>:</p>
+    <ul>
+        <li><strong>src</strong>: Define o caminho ou URL da imagem que será exibida. Exemplo:
+            <code>src="https://example.com/imagem.jpg"</code>.</li>
+        <li><strong>alt</strong>: Fornece uma descrição alternativa da imagem para leitores de tela e em caso de erro no
+            carregamento da imagem. Exemplo: <code>alt="Descrição da Imagem"</code>.</li>
+        <li><strong>height</strong> e <strong>width</strong>: Definem a altura e a largura da imagem. Exemplo:
+            <code>height="90px"</code> e <code>width="120px"</code>.</li>
+    </ul>
+
+    <p>Veja um exemplo de como usar a tag <code>&lt;img&gt;</code> para inserir uma imagem:</p>
+
+    <pre><code>
+&lt;img 
+    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e69b48c0-de96-496f-b849-5f7dd6287b87/d5u5ek3-0bab2661-5836-45ed-87c2-1f3b6119e930.jpg/v1/fit/w_512,h_356,q_70,strp/davis_and_veemon_funny_faces_by_crona45_d5u5ek3-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46Y
+
+    <a href="#index2">(Voltar ao topo)</a>
+</body>
+
+</html>
