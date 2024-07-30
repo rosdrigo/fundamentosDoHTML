@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos Básicos HTML PT 2</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<h1 id="index2">Fundamentos Básicos de HTML PT 2</h1>
-<h3><a href="index.html">Voltar para o Index</a></h3>
-<hr>
 
 <body>
+    <h1 id="index2">Fundamentos Básicos de HTML PT 2</h1>
     <h2>Utilizando Listas Básicas no HTML</h2>
 
     <p>Em HTML, você pode criar listas de duas formas principais: <strong>ordenadas</strong> e <strong>não
@@ -85,7 +84,7 @@
 
     <p>Este código cria um link visível assim:</p>
 
-    <a href="https://www.linkedin.com/in/rosdrigo">LinkedIn</a>
+    <a class="botao-link" href="https://www.linkedin.com/in/rosdrigo">LinkedIn</a>
 
 
     <h2>Utilizando Fontes em HTML</h2>
@@ -136,7 +135,8 @@
 
     <p>Para inserir imagens em uma página HTML, utilizamos a tag <code>&lt;img&gt;</code>. A tag
         <code>&lt;img&gt;</code> é uma tag auto-fechante e requer pelo menos um atributo para funcionar corretamente:
-        <code>src</code>, que define a URL da imagem que você deseja exibir.</p>
+        <code>src</code>, que define a URL da imagem que você deseja exibir.
+    </p>
 
     <p>A sintaxe básica para a tag <code>&lt;img&gt;</code> é:</p>
 
@@ -145,20 +145,21 @@
     <p>Vamos explicar os principais atributos usados com a tag <code>&lt;img&gt;</code>:</p>
     <ul>
         <li><strong>src</strong>: Define o caminho ou URL da imagem que será exibida. Exemplo:
-            <code>src="https://example.com/imagem.jpg"</code>.</li>
+            <code>src="https://example.com/imagem.jpg"</code>.
+        </li>
         <li><strong>alt</strong>: Fornece uma descrição alternativa da imagem para leitores de tela e em caso de erro no
             carregamento da imagem. Exemplo: <code>alt="Descrição da Imagem"</code>.</li>
         <li><strong>height</strong> e <strong>width</strong>: Definem a altura e a largura da imagem. Exemplo:
-            <code>height="90px"</code> e <code>width="120px"</code>.</li>
+            <code>height="90px"</code> e <code>width="120px"</code>.
+        </li>
     </ul>
 
-    <p>Veja um exemplo de como usar a tag <code>&lt;img&gt;</code> para inserir uma imagem:</p>
 
-    <pre><code>
-&lt;img 
-    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e69b48c0-de96-496f-b849-5f7dd6287b87/d5u5ek3-0bab2661-5836-45ed-87c2-1f3b6119e930.jpg/v1/fit/w_512,h_356,q_70,strp/davis_and_veemon_funny_faces_by_crona45_d5u5ek3-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46Y
-
-    <a href="#index2">(Voltar ao topo)</a>
+    <div class="container-rod">
+        <h3><a class="botao-link" href="index.html">Voltar a Primeira parte</a>
+            <a class="botao-link" href="#index2">Voltar ao topo</a>
+        </h3>
+    </div>
 </body>
 
 </html>
